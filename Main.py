@@ -24,6 +24,7 @@ Following the EDA, multiple machine learning models are employed to predict user
 - **Random Forest:** An ensemble method using multiple decision trees for improved accuracy.
 - **K-Nearest Neighbors (KNN):** A non-parametric method that classifies data points based on their proximity to neighbors.
 - **Support Vector Machine (SVM):** A powerful classifier that finds the optimal hyperplane for separating classes.
+- **GBM:** A gradient boosting algorithm that builds multiple weak learners to create a strong learner.
 - **XGBoost:** An advanced gradient boosting algorithm known for its high performance and accuracy.
 Each model is trained and evaluated using standard metrics such as accuracy and the ROC-AUC score. 
 
