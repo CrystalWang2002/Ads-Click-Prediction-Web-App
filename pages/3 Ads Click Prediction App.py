@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import xgboost as xgb
+import lightgbm as lgb
 from sklearn.preprocessing import StandardScaler,LabelEncoder
 
 # Load the trained model from the file
-with open('xgb_model.pkl', 'rb') as model_file:
-    xgb_model = pickle.load(model_file)
+with open('lgbm.pkl', 'rb') as model_file:
+    lgbm_model = pickle.load(model_file)
 
 #Load the label encoders for categorical features
 with open('label_encoders.pkl', 'rb') as le_file:
@@ -101,7 +101,7 @@ for feature in ['Daily Time Spent on Site','Area Income','Daily Internet Usage',
 input_df = pd.DataFrame([input_features])
 
 # Predict using the model
-predicted_click = xgb_model.predict(input_df)[0]
+predicted_click = lgbm_model.predict(input_df)[0]
 
 # Display prediction
 if st.button('Predict'):
