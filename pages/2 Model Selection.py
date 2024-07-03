@@ -8,7 +8,7 @@ st.title("Model Selection")
 with st.expander("0. Model Performance Overview"):
     st.markdown("""
             **XG Boost** Model is the best model among all the models, with the highest accuracy, AUC and F1 Score.
-            So we choose XG Boost Model as our final model.
+            So we choose LightGBM Model as our final model.
     """)
     st.image("./pictures/33.png", use_column_width=True)
     st.image("./pictures/34.png", use_column_width=True)
@@ -77,11 +77,11 @@ with st.expander("5. Random Forest Model"):
     st.image("./pictures/28.png", use_column_width=True)
 
 # part 6
-with st.expander("6. GBM Model"):
+with st.expander("6. LightGBM Model"):
     st.markdown("""
-        ### Model Accuracy: 0.8003
-        ### AUC: 0.8004
-        ### F1 Score: 0.7897
+        ### Model Accuracy: 0.8559
+        ### AUC: 0.8559
+        ### F1 Score: 0.8532
         """)
     st.image("./pictures/29.png", use_column_width=True)
     st.image("./pictures/30.png", use_column_width=True)
