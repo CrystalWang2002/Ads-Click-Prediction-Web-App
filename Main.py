@@ -26,6 +26,7 @@ Following the EDA, multiple machine learning models are employed to predict user
 - **Support Vector Machine (SVM)** 
 - **Light GBM** 
 - **XGBoost** 
+
 Each model is trained and evaluated using standard metrics such as accuracy, ROC-AUC score and F1-score. 
 
 ### 4. Ads click Prediction App📲
